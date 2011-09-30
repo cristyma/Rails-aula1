@@ -3,9 +3,9 @@
 require 'sinatra'
 
 get '/' do
-	"Bem-vindo. Clique  <a href='/ola'>aqui</a>"
+	erb :index
 end
 
 get '/ola' do
-	"Olá mundo!"
+	erb :ola
 end 
