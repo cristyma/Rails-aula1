@@ -24,12 +24,13 @@ pessoa1= Pessoa.new("Cicrano","22222222")
 puts pessoa1.nome
 puts pessoa1.telefone
 
-pessoa2= Pessoa.new("Beltrano", "1111-1111").relatorio
+pessoa2= Pessoa.new("Beltrano", "1111-1111")
 # pessoa2.relatorio (outra forma de chamar)
 
-pessoas[]
+pessoas = []
 pessoas << pessoa1
 pessoas << pessoa2
-pessoas.relatorio
-pessoas.each to |pessoa|
+# pessoas.relatorio
+pessoas.each do |pessoal|
+	puts pessoal.relatorio
 end
