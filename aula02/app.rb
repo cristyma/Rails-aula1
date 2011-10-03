@@ -12,3 +12,8 @@ end
 get "/hello" do
 	erb :hello
 end
+
+post '/bom-dia' do
+	@nome= params[:nome]
+	erb :bomdia
+end
